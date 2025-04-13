@@ -1,99 +1,52 @@
-#include <iostream>
-
+#include "ProcessClass.h"
 
 using namespace std;
 
+Process::Process() {
+    // Default constructor body
+}
 
-class Process{
-  private:
-    string name;
-    int arrivalTime;
-    int burstTime;
-    int priority;
+Process::Process(string name, int burst, int arrivalTime) {
+    this->name = name;
+    this->burstTime = burst;
+    this->arrivalTime = arrivalTime;
+}
 
-  public:
+Process::Process(string name, int burst, int arrivalTime, int priority) {
+    this->name = name;
+    this->burstTime = burst;
+    this->arrivalTime = arrivalTime;
+    this->priority = priority;
+}
 
-  Process(){
+void Process::setName(string name) {
+    this->name = name;
+}
 
-  }
+string Process::getName() {
+    return this->name;
+}
 
-    Process(string name,int burst,int arrivalTime){
-      this->name=name;
-      this->burstTime=burst;
-      this->arrivalTime=arrivalTime;
-    }
+void Process::setBurstTime(int burstTime) {
+    this->burstTime = burstTime;
+}
 
-    Process(string name, int burst, int arrivalTime, int priority)
-    {
-      this->name = name;
-      this->burstTime = burst;
-      this->arrivalTime = arrivalTime;
-      this->priority = priority;
-    }
+int Process::getBurstTime() {
+    return this->burstTime;
+}
 
-    void setName(string name){
-      this->name = name;
-    }
-    string getName(){
-      return this->name;
-    }
+void Process::setArrivalTime(int arrivalTime) {
+    this->arrivalTime = arrivalTime;
+}
 
-    void setBurstTime(int burstTime)
-    {
-      this->burstTime = burstTime;
-    }
+int Process::getArrivalTime() {
+    return this->arrivalTime;
+}
 
-    int getBurstTime(){
-      return this->burstTime;
-    }
+void Process::setPriority(int priority) {
+    this->priority = priority;
+}
 
-    void setArrivalTime(int arrivalTime)
-    {
-      this->arrivalTime = arrivalTime;
-    }
-
-    int getArrivalTime()
-    {
-      return this->arrivalTime;
-    }
-
-    void setPriority(int priority)
-    {
-      this->priority = priority;
-    }
-
-    int getPriority()
-    {
-      return this->priority;
-    }
-};
-
-int main(){
-
-  //   cout<<"hello"<<endl;
-  //   int n;
-  //   cin>>n;
-  //   string name;
-  //   int x, y,z;
-  //   Process arr[5];
-
-  //   for (int i = 0; i < n; i++)
-  // {
-  //     cin>>name>>x>>y>>z;
-    
-  //     arr[i].setName(name);
-  //     arr[i].setBurstTime(x);
-  //     arr[i].setArrivalTime(y);
-  //     arr[i].setPriority(z);
-    
-  // }
-  //   for (int i = 0; i < n; i++)
-  // {
-  //     cout<<arr[i].getName()<<endl<<
-  //     arr[i].getBurstTime()<<endl<<
-  //     arr[i].getArrivalTime()<<endl<<
-  //     arr[i].getPriority()<<endl;
-  // }
-
-  return 0;
+int Process::getPriority() {
+    return this->priority;
 }

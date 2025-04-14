@@ -2,34 +2,37 @@
 #include <utility>
 #include <vector>
 #include "ProcessClass.h"
+#include "Priority.h"
 using namespace std;
 
 // void roundRobin()
-int main()
-{
-    cout << "hello" << endl;
-    int n;
-    cin >> n;
-    string name;
-    int x, y, z;
-    Process arr[5];
+int main(){
 
-    for (int i = 0; i < n; i++)
-    {
-        cin >> name >> x >> y >> z;
+    cout<<"Shaghal?"<<endl;
+    priority();
+    // cout << "hello" << endl;
+    // int n;
+    // cin >> n;
+    // string name;
+    // int x, y, z;
+    // Process arr[5];
 
-        arr[i].setName(name);
-        arr[i].setBurstTime(x);
-        arr[i].setArrivalTime(y);
-        arr[i].setPriority(z);
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i].getName() << endl
-             << arr[i].getBurstTime() << endl
-             << arr[i].getArrivalTime() << endl
-             << arr[i].getPriority() << endl;
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> name >> x >> y >> z;
+
+    //     arr[i].setName(name);
+    //     arr[i].setBurstTime(x);
+    //     arr[i].setArrivalTime(y);
+    //     arr[i].setPriority(z);
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i].getName() << endl
+    //          << arr[i].getBurstTime() << endl
+    //          << arr[i].getArrivalTime() << endl
+    //          << arr[i].getPriority() << endl;
+    // }
     return 0;
 }
 

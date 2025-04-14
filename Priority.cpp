@@ -40,6 +40,7 @@ void priority(){
                 i++;
             }   
         }
+
         cout<<endl;
         // vector<Process> minPriority;
         int higherPriorityIndex=0;
@@ -61,3 +62,5 @@ void priority(){
 
     
 }
+
+//testtttt

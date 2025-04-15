@@ -1,7 +1,7 @@
 #include "Priority.h"
 #include <algorithm>
 
-void priority(){
+void priorityNonPreemptive(){
     vector <Process>processes;
     string name;
     int n,priority,burstTime,arrivalTime;

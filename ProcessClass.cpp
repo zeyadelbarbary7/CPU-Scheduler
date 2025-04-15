@@ -17,6 +17,7 @@ Process::Process(string name, int burst, int arrivalTime, int priority) {
     this->burstTime = burst;
     this->arrivalTime = arrivalTime;
     this->priority = priority;
+    this->originalBurstTime = burst;
 }
 
 void Process::setName(string name) {
@@ -33,6 +34,10 @@ void Process::setBurstTime(int burstTime) {
 
 int Process::getBurstTime() {
     return this->burstTime;
+}
+
+int Process::getOriginalBurstTime() {
+    return this->originalBurstTime;
 }
 
 void Process::setArrivalTime(int arrivalTime) {

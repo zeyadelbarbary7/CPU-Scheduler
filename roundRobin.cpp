@@ -9,7 +9,8 @@ using namespace std;
 int main(){
 
     cout<<"Shaghal?"<<endl;
-    priority();
+    //priorityPreemptive();
+    priorityNonPreemptive();
     // cout << "hello" << endl;
     // int n;
     // cin >> n;

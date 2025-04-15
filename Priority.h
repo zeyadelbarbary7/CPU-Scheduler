@@ -8,6 +8,7 @@
 
 using namespace std;
 
-void priority();
+void priorityNonPreemptive();
+void priorityPreemptive();
 
 #endif

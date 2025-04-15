@@ -10,6 +10,7 @@ class Process{
     int arrivalTime;
     int burstTime;
     int priority;
+    int originalBurstTime;
 
     public:
 
@@ -20,6 +21,7 @@ class Process{
     string getName();
     void setBurstTime(int burstTime);
     int getBurstTime();
+    int getOriginalBurstTime();
     void setArrivalTime(int arrivalTime);
     int getArrivalTime();
     void setPriority(int priority);
